@@ -1,0 +1,302 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;}
+
+
+a{
+    text-decoration: none;
+    
+}
+
+
+
+.body__tituloppal{
+    color:$color__tipografia;
+    font-weight: 900;
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+    padding: 10px;
+    
+}
+
+.body__parrafoppal{
+    color: #ee36e8;
+    font-size: 2rem;
+    text-align: center;
+    font-style:italic;
+    line-height: normal;
+    margin: 15px 15px;
+}
+
+.body__titulo2{
+    color:$color__tipografia;
+    font-size: 3rem;
+    padding: 10px;
+    
+}
+
+li a{
+    color: #7e7a7b;
+    margin: 10px;
+    text-decoration: none;
+    
+}
+
+.body__titulo3{
+    color: #ee1e59;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+
+}
+.color__fondoPpal{
+    background-color: #f792b2;
+}
+
+.color__fondo2{
+    background: rgb(101,5,83);
+    background: linear-gradient(180deg, rgba(101,5,83,1) 0%, rgba(194,31,168,1) 48%, rgba(223,83,204,0.41780462184873945) 100%);
+}
+
+
+ul li a:hover{
+    background-color:#e82253;
+    text-decoration: none;
+}
+.active{
+    color: #dc4b6f;
+    font-weight: 900;
+}
+
+.body__servicio1{
+    border: solid;
+    border-color: #dd889d;
+    margin: 10px;
+    padding: 10px;
+}
+
+.fotoPerfil{
+    margin: 0px 15px;
+    padding: 10px;
+    height: 300%;
+}
+
+form{
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+fieldset{
+    border: 0;
+
+}
+
+table{
+    margin: 15px;
+}
+
+
+
+
+
+  .body__parrafoHome{
+      color: rgb(75, 72, 72);
+      font-size: 2rem;
+      text-align: center;
+      font-style:italic;
+      line-height: normal;
+      margin: 15px 15px;
+  }
+
+
+.fotoNota{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.grilla {
+     padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows:400px ;
+    grid-gap: 1rem;
+    grid-template-areas: "primero segundo tercero"
+  }
+
+.pagServicio{
+    margin-top: 5px;
+}
+
+.tamano{
+    font-size: 1rem;
+}
+
+.size{
+    object-fit: cover;
+    height: 70%;
+    width: 100%;
+}
+
+.item {
+
+    border: solid 2px yellow;
+  
+  }
+
+  div#primerCuadrante {
+
+    grid-area: primero;
+  
+  }
+
+  div#segundoCuadrante {
+
+  grid-area: segundo;
+
+}
+
+
+
+div#tercerCuadrante {
+
+  grid-area: tercero;
+
+}
+
+.escalar{
+    
+    height: 70%;
+    transition: height 2s;
+     }
+
+.escalar:hover{
+    height: 77%;
+}
+
+h3{
+    animation-duration: 2s;
+   animation-name: aparecer;
+}
+
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ .aparecer{
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+
+  
+ .efecto{
+    height:300px;
+    animation-name: un_efecto;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+@keyframes un_efecto {
+    0%{  width: 300px;
+         height:300px ;}
+    25%{ width: 400px; 
+         height: 400px;}
+    50%{ width: 600px;
+         height: 600px;}
+    75%{ width: 400px;
+         height:400px;}
+    100%{width: 300px;
+         height:300px;}
+ }
+ 
+ .cambioColor{
+     transition: 1s;
+ }
+ .cambioColor:hover{
+     color:  #a91a1a;
+ }
+
+.name{
+    border: 1px solid;color: #dadada;
+    border-radius: 0.25rem;
+}
+
+.centro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.centroTexto{
+    text-align: center;
+}
+
+.body__tituloPpal1{
+    color:$color__tipografia;
+    font-weight: 900;
+    font-size: 5rem ;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.color__fondo--sobreMi{
+    @if $flor==margarita{
+        color: #e1b1bd;
+    }@else if $flor==rosa{
+        color: #d87c93;
+    }
+}
+
+.color__fondo--trabajos{
+    @if $flor==margarita{
+        color: #e1b1bd;
+    }@else if $flor==rosa{
+        color: #d87c93;
+    }
+  
+}
+
+$trabajos:libro1, libro2, libro3;
+@each $trabajo in $trabajos {
+    .trabajo-#{trabajo}{
+        background-image:url('multimeda/img/#{$trabajo}.jpg');
+        width:30%;
+    }
+    
+}
+.escalar__trabajos{
+    
+   width: 30%;
+    transition: height 2s;
+     }
+
+.escalar__trabajos:hover{
+    width: 40%;
+}
+
+.body__parrafoppal--2{
+    @extend.body__parrafoppal;
+    color:rgb(232, 74, 147) ;
+ }

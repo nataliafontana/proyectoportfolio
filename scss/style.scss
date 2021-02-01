@@ -1,0 +1,13 @@
+$color__tipografia:#ea2c62;
+$flor:margarita;
+@import "header";
+@import "body";
+@import "footer";
+
+*{
+    margin: 0; padding: 0;
+}
+html { /* etiqueta raíz */
+    font-size: 62.5%;
+ }
+ 
