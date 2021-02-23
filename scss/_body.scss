@@ -15,12 +15,16 @@ a{
 
 .body__tituloppal{
     color:$color__tipografia;
-    font-weight: 900;
-    font-size: 5rem;
+    font-weight:400;
+    font-size: 6rem;
     text-align: center;
     text-transform: uppercase;
-    margin: 20px;
-    padding: 10px;
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width: 640px) {
+        font-size:3rem;
+        margin-bottom: 0;
+    }
     
 }
 
@@ -111,7 +115,7 @@ table{
       text-align: center;
       font-style:italic;
       line-height: normal;
-      margin: 15px 15px;
+      margin: 2rem;
   }
 
 
@@ -256,9 +260,18 @@ h3{
 .body__tituloPpal1{
     color:$color__tipografia;
     font-weight: 900;
-    font-size: 5rem ;
-    text-transform: uppercase;
+    font-size: 30rem ;
     text-align: center;
+    font-family: 'Bodoni Moda', serif;
+    margin-top: 2rem;
+
+    @media only screen and (max-width:768px){
+        
+            font-size: 8rem;
+            text-align: center;
+        }
+   
+    
 }
 
 .color__fondo--sobreMi{
@@ -300,3 +313,27 @@ $trabajos:libro1, libro2, libro3;
     @extend.body__parrafoppal;
     color:rgb(232, 74, 147) ;
  }
+
+ .tipografia__strong{
+     font-weight: bold;
+ }
+
+ 
+
+ .efecto__p{
+    animation-name: un_efecto__p;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 8s;
+    animation-delay: 0s;
+}
+@keyframes un_efecto__p {
+    0%{  color: $color__tipografia;}
+    25%{ color: #f9b80b;}
+    50%{ color: $color__tipografia}
+    75%{ color: #f9b80b;}
+    100%{color: $color__tipografia;}
+ }
+
+
+ 

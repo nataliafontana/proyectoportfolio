@@ -14,7 +14,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin: 50px 0 0 0; }
+  margin: 0 0 0 0; }
 
 .header__logo {
   width: 10%; }
@@ -24,9 +24,9 @@ nav {
   flex-direction: row;
   justify-content: center; }
 
-.header_sticky {
+.menu_sticky {
   position: sticky;
-  top: 1rem;
+  top: 0rem;
   background-color: #ffff; }
 
 .header__nav--fondo {
@@ -43,13 +43,16 @@ a {
   text-decoration: none; }
 
 .body__tituloppal {
-  color: #ea2c62;
-  font-weight: 900;
-  font-size: 5rem;
+  color: #ea5677;
+  font-weight: 400;
+  font-size: 6rem;
   text-align: center;
   text-transform: uppercase;
-  margin: 20px;
-  padding: 10px; }
+  margin-bottom: 3rem; }
+  @media only screen and (max-width: 640px) {
+    .body__tituloppal {
+      font-size: 3rem;
+      margin-bottom: 0; } }
 
 .body__parrafoppal, .body__parrafoppal--2 {
   color: #ee36e8;
@@ -60,7 +63,7 @@ a {
   margin: 15px 15px; }
 
 .body__titulo2 {
-  color: #ea2c62;
+  color: #ea5677;
   font-size: 3rem;
   padding: 10px; }
 
@@ -118,7 +121,7 @@ table {
   text-align: center;
   font-style: italic;
   line-height: normal;
-  margin: 15px 15px; }
+  margin: 2rem; }
 
 .fotoNota {
   display: flex;
@@ -228,11 +231,16 @@ h3 {
   text-align: center; }
 
 .body__tituloPpal1 {
-  color: #ea2c62;
+  color: #ea5677;
   font-weight: 900;
-  font-size: 5rem;
-  text-transform: uppercase;
-  text-align: center; }
+  font-size: 30rem;
+  text-align: center;
+  font-family: 'Bodoni Moda', serif;
+  margin-top: 2rem; }
+  @media only screen and (max-width: 768px) {
+    .body__tituloPpal1 {
+      font-size: 8rem;
+      text-align: center; } }
 
 .color__fondo--sobreMi {
   color: #e1b1bd; }
@@ -261,6 +269,28 @@ h3 {
 
 .body__parrafoppal--2 {
   color: #e84a93; }
+
+.tipografia__strong {
+  font-weight: bold; }
+
+.efecto__p {
+  animation-name: un_efecto__p;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 8s;
+  animation-delay: 0s; }
+
+@keyframes un_efecto__p {
+  0% {
+    color: #ea5677; }
+  25% {
+    color: #f9b80b; }
+  50% {
+    color: #ea5677; }
+  75% {
+    color: #f9b80b; }
+  100% {
+    color: #ea5677; } }
 
 .footer__textoFooter {
   display: inline-block;
