@@ -15,8 +15,8 @@ a{
 
 .body__tituloppal{
     color:$color__tipografia;
-    font-weight:400;
-    font-size: 6rem;
+    font-weight:700;
+    font-size: 4rem;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 3rem;
@@ -118,11 +118,31 @@ table{
       margin: 2rem;
   }
 
+.size__perfil{
+    width: 300px;
+}
 
 .fotoNota{
-    display: flex;
-    flex-direction: row;
+    padding: 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 400px 300px ;
+    grid-template-rows:400px ;
+    grid-gap: 7rem;
+    justify-content: center;
+    grid-template-areas: "primero segundo"
+    
 
+
+}
+
+div#item1{
+    grid-area: primero;
+
+}
+
+div#item2{
+    grid-area: segundo;
 }
 
 
@@ -214,27 +234,6 @@ h3{
  }
 
   
- .efecto{
-    height:300px;
-    animation-name: un_efecto;
-    animation-iteration-count: 2;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
-    animation-delay: 0s;
-}
-@keyframes un_efecto {
-    0%{  width: 300px;
-         height:300px ;}
-    25%{ width: 400px; 
-         height: 400px;}
-    50%{ width: 600px;
-         height: 600px;}
-    75%{ width: 400px;
-         height:400px;}
-    100%{width: 300px;
-         height:300px;}
- }
- 
  .cambioColor{
      transition: 1s;
  }
@@ -276,17 +275,17 @@ h3{
 
 .color__fondo--sobreMi{
     @if $flor==margarita{
-        color: #e1b1bd;
+        background-color: #f7e4e9;
     }@else if $flor==rosa{
-        color: #d87c93;
+        background-color: #d87c93;
     }
 }
 
 .color__fondo--trabajos{
     @if $flor==margarita{
-        color: #e1b1bd;
+        background-color: #f7e4e9;
     }@else if $flor==rosa{
-        color: #d87c93;
+        background-color: #d87c93;
     }
   
 }
@@ -312,6 +311,9 @@ $trabajos:libro1, libro2, libro3;
 .body__parrafoppal--2{
     @extend.body__parrafoppal;
     color:rgb(232, 74, 147) ;
+    font-size: 1.8rem;
+    color:black;
+    text-align: justify;
  }
 
  .tipografia__strong{

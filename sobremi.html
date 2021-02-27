@@ -8,12 +8,18 @@
     productos relacionados al Diseño Grafico y paginas web.">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@800&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+  />
     <title>¿Quien soy?</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="color__fondo--sobreMi">
-    <header class="header_sticky">
+    <header class="menu_sticky menu__nav--fondoMi">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,30 +57,28 @@
             </div>
           </nav>
     </header>
-   <!-------Listas ---------->  
+   <!-------contenido seccion ---------->  
     <section>
         <h1 class="body__tituloppal">Sobre mi</h1>
-        <div class="fotoNota">
-            <img src="Multimedia/perfil.jpg" alt="Perfil" width="20%" class="fotoPerfil">
-            <p class="body__parrafoppal--2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos facilis libero eos facere temporibus aspernatur excepturi animi maxim
-            expedita dolores molestias ad impedit, nemo optio non architecto distinctio commodi quam.</p>
-        
-        </div>
+          <div class="fotoNota">
+              <div><p class="body__parrafoppal--2 animate__backInDown" id="item1">"Hola! soy Natalia, diseñadora gráfica recibida de la FADU-UBA. 
+                Desde chica me encuentro dibujando y creando, soy una persona curiosa, amigable,creativa y detallista. Siempre me 
+                gustó todo lo relacionado al mundo del diseño y la comunicación, estudié diseño gráfico en base a esos dos mundos.
+                Actualemnete estoy realizando la carrera de desarrollo fontend, un espacio totalmente nuevo para mi pero muy entusiasmada
+                de seguir aprendiendo y creciendo." </p></div>
+              <div><img src="Multimedia/foto_nati.png" id="item2" alt="Perfil" width="20%" class="size__perfil"></div>
+          </div>
     </section>
     <footer>
-        <h3 class="body__titulo2">Redes Sociales</h3>
-        <div class="footer__textoFooter">
-            <p class="cambioColor">instagram</p>
-        </div>
-        <div class="footer__textoFooter">
-            <p><a href="https://www.linkedin.com/in/nataliagfontana/" class="cambioColor">Linkedin</a></p>
-        </div>
-        <div class="footer__textoFooter">
-            <p> <a href="https://www.behance.net/nataliagfontana" class="cambioColor">Behance</a> </p>
-        </div>
-        <div class="footer__textoFooter">
-            <p class="cambioColor">contacto</p>
-        </div>
+      <div class="conteiner text-center footer__redes">
+        <a href="https://www.behance.net/nataliagfontana"><img src="Multimedia/behance.png"  alt="logobehance" width="35px" class="m-2"></a>
+        <a href="https://www.instagram.com/disenografico.nf/?hl=es-la"><img src="Multimedia/instagram.png" alt="logoinstagram" width="35px" class="m-2"></a>
+        <a href="https://www.linkedin.com/in/nataliagfontana/"><img  src="Multimedia/linkedin.png"  alt="logolinkedin" width="35px" class="m-2"></a>
+      </div>
+      <div class="footer__derechos--contenedor">
+        <p class="footer__derechos tipografia__strong">© 2020 Copyright: Natalia Fontana</p>
+      </div>
+      
         
        
 

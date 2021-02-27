@@ -52,3 +52,10 @@ nav{
     background-color: #ffff;
 }
 
+.menu__nav--fondoMi{
+    @if $flor==margarita{
+        background-color: #f7e4e9;
+    }@else if $flor==rosa{
+        background-color: #d87c93;
+    }
+}

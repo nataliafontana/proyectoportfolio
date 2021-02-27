@@ -32,6 +32,9 @@ nav {
 .header__nav--fondo {
   background-color: #ffff; }
 
+.menu__nav--fondoMi {
+  background-color: #f7e4e9; }
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
@@ -44,8 +47,8 @@ a {
 
 .body__tituloppal {
   color: #ea5677;
-  font-weight: 400;
-  font-size: 6rem;
+  font-weight: 700;
+  font-size: 4rem;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 3rem; }
@@ -123,9 +126,24 @@ table {
   line-height: normal;
   margin: 2rem; }
 
+.size__perfil {
+  width: 300px; }
+
 .fotoNota {
-  display: flex;
-  flex-direction: row; }
+  padding: 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 400px 300px;
+  grid-template-rows: 400px;
+  grid-gap: 7rem;
+  justify-content: center;
+  grid-template-areas: "primero segundo"; }
+
+div#item1 {
+  grid-area: primero; }
+
+div#item2 {
+  grid-area: segundo; }
 
 .grilla {
   padding: 1rem;
@@ -186,31 +204,6 @@ h3 {
   100% {
     opacity: 1; } }
 
-.efecto {
-  height: 300px;
-  animation-name: un_efecto;
-  animation-iteration-count: 2;
-  animation-timing-function: ease-in;
-  animation-duration: 2s;
-  animation-delay: 0s; }
-
-@keyframes un_efecto {
-  0% {
-    width: 300px;
-    height: 300px; }
-  25% {
-    width: 400px;
-    height: 400px; }
-  50% {
-    width: 600px;
-    height: 600px; }
-  75% {
-    width: 400px;
-    height: 400px; }
-  100% {
-    width: 300px;
-    height: 300px; } }
-
 .cambioColor {
   transition: 1s; }
 
@@ -243,10 +236,10 @@ h3 {
       text-align: center; } }
 
 .color__fondo--sobreMi {
-  color: #e1b1bd; }
+  background-color: #f7e4e9; }
 
 .color__fondo--trabajos {
-  color: #e1b1bd; }
+  background-color: #f7e4e9; }
 
 .trabajo-trabajo {
   background-image: url("multimeda/img/libro1.jpg");
@@ -268,7 +261,10 @@ h3 {
   width: 40%; }
 
 .body__parrafoppal--2 {
-  color: #e84a93; }
+  color: #e84a93;
+  font-size: 1.8rem;
+  color: black;
+  text-align: justify; }
 
 .tipografia__strong {
   font-weight: bold; }
@@ -302,7 +298,8 @@ h3 {
 
 .footer_derechos {
   font-size: 1rem;
-  margin: 1.5rem; }
+  margin: 1.5rem;
+  color: black; }
 
 * {
   margin: 0;
