@@ -145,6 +145,31 @@ div#item1 {
 div#item2 {
   grid-area: segundo; }
 
+.body__skills {
+  padding: 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px;
+  grid-gap: 3rem;
+  justify-content: center; }
+
+.body_titulo--skills {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 700;
+  color: #ea5677;
+  margin-bottom: 2rem; }
+
+.size__iconos {
+  width: 60px; }
+
+.size__iconos--css {
+  width: 100px; }
+
+.size__iconos--adobe {
+  width: 66px; }
+
 .grilla {
   padding: 1rem;
   margin: 0 auto;
@@ -187,6 +212,13 @@ div#tercerCuadrante {
 h3 {
   animation-duration: 2s;
   animation-name: aparecer; }
+
+.escalar__skills {
+  width: 100%;
+  transition: width 2s; }
+
+.escalar__skills:hover {
+  width: 115%; }
 
 @keyframes aparecer {
   0% {
