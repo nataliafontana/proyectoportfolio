@@ -172,7 +172,7 @@ table{
     }
 
 }
-.body_titulo--skills{
+.body__titulo--skills{
     font-size: 3rem;
     text-align: center;
     font-weight: 700;
@@ -369,7 +369,7 @@ $trabajos:libro1, libro2, libro3;
 
 .escalar__trabajos:hover{
     width: 40%;
-}
+} 
 
 .body__parrafoppal--2{
     @extend.body__parrafoppal;
@@ -404,5 +404,28 @@ $trabajos:libro1, libro2, libro3;
     100%{color: $color__tipografia;}
  }
 
+ .body__seccion--ilustracion{
+     display:grid;
+     padding: 1rem;
+     margin: 0;
+     justify-content:center;
+     grid-template-columns: 400px;
+     grid-template-rows: 450px 500px 700px 700px;
+     grid-gap:1rem;
+     
+ }
 
- 
+ .size_trabajos{
+     width: 400px;
+ }
+
+ .body__seccion--diseno{
+    display:grid;
+    padding: 1rem;
+    margin: 0;
+    justify-content:center;
+    grid-template-columns: 400px;
+    grid-template-rows: 400px 400px 400px 500px;
+    grid-gap:1rem;
+
+ }
