@@ -107,6 +107,7 @@ ul li a:hover {
   padding: 10px;
   height: 300%; }
 
+/* formularios contacto*/
 form {
   margin: 10px;
   padding: 15px;
@@ -115,9 +116,18 @@ form {
 fieldset {
   border: 0; }
 
-table {
-  margin: 15px; }
+.body__form--texto {
+  color: #ea5677;
+  margin: 1rem;
+  font-weight: 800; }
 
+.body__form--color {
+  background-color: #f9b80b; }
+
+.form__textarea {
+  margin-bottom: 1rem; }
+
+/* fin formularios contacto*/
 .body__parrafoHome {
   color: #4b4848;
   font-size: 2rem;
@@ -129,6 +139,7 @@ table {
 .size__perfil {
   width: 300px; }
 
+/* seccion sobre mi*/
 .fotoNota {
   display: grid;
   padding: 1rem;
@@ -187,14 +198,30 @@ table {
 .size__iconos--adobe {
   width: 66px; }
 
+/* seccion servicios*/
 .grilla {
-  padding: 1rem;
+  padding: 2rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 400px;
-  grid-gap: 1rem;
-  grid-template-areas: "primero segundo tercero"; }
+  justify-content: center;
+  grid-template-columns: 300px;
+  grid-template-rows: 400px 400px 400px;
+  grid-gap: 1rem; }
+  @media only screen and (min-width: 768px) {
+    .grilla {
+      padding: 1rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 400px;
+      grid-gap: 1rem;
+      grid-template-areas: "primero segundo tercero"; }
+      .grilla div#primerCuadrante {
+        grid-area: primero; }
+      .grilla div#segundoCuadrante {
+        grid-area: segundo; }
+      .grilla div#tercerCuadrante {
+        grid-area: tercero; } }
 
 .pagServicio {
   margin-top: 5px; }
@@ -210,28 +237,19 @@ table {
 .item {
   border: solid 2px yellow; }
 
-div#primerCuadrante {
-  grid-area: primero; }
-
-div#segundoCuadrante {
-  grid-area: segundo; }
-
-div#tercerCuadrante {
-  grid-area: tercero; }
-
 .escalar {
   height: 70%;
   transition: height 2s; }
   @media only screen and (min-width: 768px) {
     .escalar {
-      height: 100%;
+      height: 75%;
       transform: height 2s; } }
 
 .escalar:hover {
   height: 77%; }
   @media only screen and (min-width: 768px) {
     .escalar:hover {
-      height: 115%; } }
+      height: 70%; } }
 
 h3 {
   animation-duration: 2s;
@@ -297,25 +315,6 @@ h3 {
 .color__fondo--trabajos {
   background-color: #f7e4e9; }
 
-.trabajo-trabajo {
-  background-image: url("multimeda/img/libro1.jpg");
-  width: 30%; }
-
-.trabajo-trabajo {
-  background-image: url("multimeda/img/libro2.jpg");
-  width: 30%; }
-
-.trabajo-trabajo {
-  background-image: url("multimeda/img/libro3.jpg");
-  width: 30%; }
-
-.escalar__trabajos {
-  width: 30%;
-  transition: height 2s; }
-
-.escalar__trabajos:hover {
-  width: 40%; }
-
 .body__parrafoppal--2 {
   color: #e84a93;
   font-size: 1.4rem;
@@ -347,6 +346,7 @@ h3 {
   100% {
     color: #ea5677; } }
 
+/* seccion trabajos*/
 .body__seccion--ilustracion {
   display: grid;
   padding: 1rem;
@@ -386,25 +386,23 @@ h3 {
   margin: 0;
   justify-content: center;
   grid-template-columns: 400px;
-  grid-template-rows: 400px 400px 400px 400px;
-  grid-gap: 1rem; }
+  grid-template-rows: 330px 330px;
+  grid-gap: 2rem; }
   @media only screen and (min-width: 768px) {
     .body__seccion--diseno {
       display: grid;
-      margin: 0;
+      margin: 0 auto;
       justify-content: center;
       padding: 1rem;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-row: 400px 400px; }
+      grid-template-rows: 400px; }
       .body__seccion--diseno .diseno {
         grid-column: 1/ span 3; }
       .body__seccion--diseno .diseno2 {
         grid-column: 4/span 6; }
       .body__seccion--diseno .diseno3 {
-        grid-row: 2;
-        grid-column: 1/ span 3; }
+        grid-column: 1/ span 6; }
       .body__seccion--diseno .diseno4 {
-        grid-row: 2;
         grid-column: 4/span 6; } }
 
 .footer__redes {

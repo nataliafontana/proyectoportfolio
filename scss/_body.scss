@@ -89,6 +89,8 @@ ul li a:hover{
     padding: 10px;
     height: 300%;
 }
+ 
+/* formularios contacto*/
 
 form{
     margin: 10px;
@@ -101,13 +103,21 @@ fieldset{
 
 }
 
-table{
-    margin: 15px;
+.body__form--texto{
+    color: $color__tipografia;
+    margin:1rem;
+    font-weight: 800;
 }
 
+.body__form--color{
+    background-color:#f9b80b ;
+}
 
+.form__textarea{
+    margin-bottom: 1rem;
+}
 
-
+/* fin formularios contacto*/
 
   .body__parrafoHome{
       color: rgb(75, 72, 72);
@@ -122,6 +132,7 @@ table{
     width: 300px;
 }
 
+/* seccion sobre mi*/
 .fotoNota{
     display: grid;
   padding: 1rem;
@@ -190,16 +201,39 @@ table{
     width: 66px;
 }
 
-
+/* seccion servicios*/
 
 .grilla {
-     padding: 1rem;
+    padding: 2rem;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows:400px ;
+    justify-content: center;
+    grid-template-columns: 300px ;
+    grid-template-rows:400px 400px 400px ;
     grid-gap: 1rem;
-    grid-template-areas: "primero segundo tercero"
+
+    @media only screen and (min-width: 768px){
+        padding: 1rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows:400px ;
+        grid-gap: 1rem;
+        grid-template-areas: "primero segundo tercero";
+
+        div#primerCuadrante{
+            grid-area: primero;
+        }
+
+        div#segundoCuadrante{
+            grid-area: segundo;
+        }
+
+        div#tercerCuadrante{
+            grid-area: tercero;
+        }
+
+    }
   }
 
 .pagServicio{
@@ -222,25 +256,6 @@ table{
   
   }
 
-  div#primerCuadrante {
-
-    grid-area: primero;
-  
-  }
-
-  div#segundoCuadrante {
-
-  grid-area: segundo;
-
-}
-
-
-
-div#tercerCuadrante {
-
-  grid-area: tercero;
-
-}
 
 .escalar{
     
@@ -248,7 +263,7 @@ div#tercerCuadrante {
     transition: height 2s;
 
     @media only screen and (min-width: 768px) {
-        height: 100%;
+        height: 75%;
         transform: height 2s;
     }
      }
@@ -256,7 +271,7 @@ div#tercerCuadrante {
 .escalar:hover{
     height: 77%;
     @media only screen and (min-width: 768px) {
-        height: 115%;
+        height: 70%;
     }
 }
 
@@ -354,23 +369,6 @@ h3{
   
 }
 
-$trabajos:libro1, libro2, libro3;
-@each $trabajo in $trabajos {
-    .trabajo-#{trabajo}{
-        background-image:url('multimeda/img/#{$trabajo}.jpg');
-        width:30%;
-    }
-    
-}
-.escalar__trabajos{
-    
-   width: 30%;
-    transition: height 2s;
-     }
-
-.escalar__trabajos:hover{
-    width: 40%;
-} 
 
 .body__parrafoppal--2{
     @extend.body__parrafoppal;
@@ -405,6 +403,7 @@ $trabajos:libro1, libro2, libro3;
     100%{color: $color__tipografia;}
  }
 
+ /* seccion trabajos*/
  .body__seccion--ilustracion{
      display:grid;
      padding: 1rem;
@@ -459,16 +458,17 @@ $trabajos:libro1, libro2, libro3;
     margin: 0;
     justify-content:center;
     grid-template-columns: 400px;
-    grid-template-rows: 400px 400px 400px 400px;
-    grid-gap:1rem;
+    grid-template-rows: 330px 330px;
+    grid-gap:2rem;
 
     @media only screen and (min-width: 768px){
         display: grid;
-        margin: 0;
+        margin: 0 auto;
         justify-content: center;
         padding: 1rem;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-row: 400px 400px;
+        grid-template-rows: 400px;
+        
 
         .diseno{
             grid-column: 1/ span 3;
@@ -479,12 +479,10 @@ $trabajos:libro1, libro2, libro3;
         }
     
         .diseno3{
-            grid-row: 2;
-            grid-column: 1/ span 3;
+            grid-column: 1/ span 6;
         }
     
         .diseno4{
-            grid-row: 2;
             grid-column: 4/span 6;
         }
     } 
