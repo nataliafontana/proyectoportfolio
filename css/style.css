@@ -130,29 +130,45 @@ table {
   width: 300px; }
 
 .fotoNota {
-  padding: 1rem;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: 400px 300px;
-  grid-template-rows: 400px;
-  grid-gap: 7rem;
-  justify-content: center;
-  grid-template-areas: "primero segundo"; }
-
-div#item1 {
-  grid-area: primero; }
-
-div#item2 {
-  grid-area: segundo; }
+  padding: 1rem;
+  margin: 0;
+  grid-template-columns: 300px;
+  grid-template-rows: 300px 400px;
+  grid-gap: 1rem;
+  justify-content: center; }
+  @media only screen and (min-width: 768px) {
+    .fotoNota {
+      padding: 1rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 400px 300px;
+      grid-template-rows: 400px;
+      grid-gap: 7rem;
+      justify-content: center;
+      grid-template-areas: "primero segundo"; } }
+  .fotoNota div#item1 {
+    grid-area: primero; }
+  .fotoNota div#item2 {
+    grid-area: segundo; }
 
 .body__skills {
   padding: 1rem;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 100px 100px 100px 100px;
-  grid-template-rows: 100px;
-  grid-gap: 3rem;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: 50px;
+  grid-gap: 1rem;
   justify-content: center; }
+  @media only screen and (min-width: 768px) {
+    .body__skills {
+      padding: 1rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 100px 100px 100px 100px;
+      grid-template-rows: 100px;
+      grid-gap: 3rem;
+      justify-content: center; } }
 
 .body_titulo--skills {
   font-size: 3rem;
@@ -165,7 +181,7 @@ div#item2 {
   width: 60px; }
 
 .size__iconos--css {
-  width: 100px; }
+  width: 90px; }
 
 .size__iconos--adobe {
   width: 66px; }
@@ -205,20 +221,27 @@ div#tercerCuadrante {
 .escalar {
   height: 70%;
   transition: height 2s; }
+  @media only screen and (min-width: 768px) {
+    .escalar {
+      height: 100%;
+      transform: height 2s; } }
 
 .escalar:hover {
   height: 77%; }
+  @media only screen and (min-width: 768px) {
+    .escalar:hover {
+      height: 115%; } }
 
 h3 {
   animation-duration: 2s;
   animation-name: aparecer; }
 
 .escalar__skills {
-  width: 100%;
+  width: 70%;
   transition: width 2s; }
 
 .escalar__skills:hover {
-  width: 115%; }
+  width: 90%; }
 
 @keyframes aparecer {
   0% {
@@ -294,9 +317,12 @@ h3 {
 
 .body__parrafoppal--2 {
   color: #e84a93;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: black;
   text-align: justify; }
+  @media only screen and (min-width: 768px) {
+    .body__parrafoppal--2 {
+      font-size: 1.8rem; } }
 
 .tipografia__strong {
   font-weight: bold; }
