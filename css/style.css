@@ -175,7 +175,8 @@ table {
   text-align: center;
   font-weight: 700;
   color: #ea5677;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
 
 .size__iconos {
   width: 60px; }
@@ -352,11 +353,32 @@ h3 {
   margin: 0;
   justify-content: center;
   grid-template-columns: 400px;
-  grid-template-rows: 450px 500px 700px 700px;
-  grid-gap: 1rem; }
+  grid-template-rows: 400px 150px 450px 650px 650px;
+  grid-gap: 2rem; }
+  @media only screen and (min-width: 768px) {
+    .body__seccion--ilustracion {
+      display: grid;
+      margin: 0;
+      justify-content: center;
+      padding: 1rem;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 400px 300px;
+      grid-gap: 2rem; }
+      .body__seccion--ilustracion .ilus {
+        grid-column: 1/ span 2; }
+      .body__seccion--ilustracion .ilus2 {
+        grid-column: 3/ span 6; }
+      .body__seccion--ilustracion .ilus3 {
+        grid-row: 2;
+        grid-column: 1/ span 3; } }
 
-.size_trabajos {
+.size__trabajos {
   width: 400px; }
+  @media only screen and (min-width: 768px) {
+    .size__trabajos {
+      object-fit: cover;
+      width: 100%;
+      height: 100%; } }
 
 .body__seccion--diseno {
   display: grid;
@@ -364,8 +386,26 @@ h3 {
   margin: 0;
   justify-content: center;
   grid-template-columns: 400px;
-  grid-template-rows: 400px 400px 400px 500px;
+  grid-template-rows: 400px 400px 400px 400px;
   grid-gap: 1rem; }
+  @media only screen and (min-width: 768px) {
+    .body__seccion--diseno {
+      display: grid;
+      margin: 0;
+      justify-content: center;
+      padding: 1rem;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-row: 400px 400px; }
+      .body__seccion--diseno .diseno {
+        grid-column: 1/ span 3; }
+      .body__seccion--diseno .diseno2 {
+        grid-column: 4/span 6; }
+      .body__seccion--diseno .diseno3 {
+        grid-row: 2;
+        grid-column: 1/ span 3; }
+      .body__seccion--diseno .diseno4 {
+        grid-row: 2;
+        grid-column: 4/span 6; } }
 
 .footer__redes {
   margin-top: 6rem;
